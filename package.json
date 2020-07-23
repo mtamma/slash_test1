@@ -1,0 +1,26 @@
+{
+  "name": "slash_test1",
+  "version": "1.0.0",
+  "description": "Tech Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ls"
+  },
+  "author": "Mardi Vester Tamma, mardi_tamma@yahoo.com",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "lodash": "^4.17.19",
+    "mongoose": "^5.9.25",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
