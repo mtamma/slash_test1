@@ -3,9 +3,9 @@
 const app = require('../app');
 const debug = require('debug')('Api:server');
 const http = require('http') ;
-const { on } = require('process');
-const port = '3000';
+global._ = require('lodash');
 
+const port = '3000';
 app.set('port', port);
 const server = http.createServer(app);
 server.listen(port);

@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
-const { stringify } = require('querystring');
 
 const userSchema = new mongoose.Schema({
     email: {
@@ -10,7 +9,7 @@ const userSchema = new mongoose.Schema({
         index: true,
         required: true
     },
-    name: {
+    username: {
         type: String,
         required: true
     },

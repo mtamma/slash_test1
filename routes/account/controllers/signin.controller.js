@@ -6,14 +6,14 @@ const signinFn = function (req, res) {
             return res.status(404).json(err);
         }
         if (!user) {
-            return res.status(401, json(info));
+            return res.status(401).json(info);
         }
         const token = user.generateJwt();
         res.status(200);
         res.json({
             token: token
         });
-    });
+    })(req, res);
 }
 
 module.exports = signinFn;
